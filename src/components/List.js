@@ -8,9 +8,9 @@ class List extends Component {
         const adata = this.props.data;
         const todoList = adata.map((v, i) => (
             <Items
-                init={v.init}
+                cin={v.cin}
                 out={v.out}
-                rest={v.rest}
+                last={v.last}
                 key={i}
             />
         ));

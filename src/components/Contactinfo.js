@@ -7,8 +7,8 @@ class Contactinfo extends Component {
         super();
         this.state = {
             todos: [
-                {init: 5000, out: 0, rest: 5000},
-                {init: 5000, out: 0, rest: 5000}
+                {cin: 5000, out: 0, last: 5000},
+                {cin: 5000, out: 0, last: 5000}
             ]
         }
     }
@@ -18,7 +18,7 @@ class Contactinfo extends Component {
         var newTodos =  [...this.state.todos];
         (Type == 1) ? newInt = cost : newOut = Math.abs(cost);
         var newTodos2 = [...this.state.todos, {
-            init:newInt ,out:newOut, rest:newTodos[newTodos.length-1].rest+cost*1
+            cin:newInt ,out:newOut, last:newTodos[newTodos.length-1].last+cost*1
         }];
         this.setState({ todos: newTodos2 });
     }

@@ -4,16 +4,16 @@ class Items extends Component {
 
     render() {
         const {
-            init,
+            cin,
             out,
-            rest
+            last
         } = this.props;
 
         return (
             <tr>
-                <td>{init}</td>
+                <td>{cin}</td>
                 <td>{out}</td>
-                <td>{rest}</td>
+                <td>{last}</td>
             </tr>
         )
     }
